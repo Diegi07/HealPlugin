@@ -1,0 +1,10 @@
+name: HealPlugin
+version: 1.2
+main: de.diego.tutorial.main.Main
+
+commands:
+   heal:
+   food:
+   health:
+   healhelp:
+   hh:
