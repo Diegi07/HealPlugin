@@ -1,0 +1,24 @@
+package de.diego.tutorial.main;
+
+import org.bukkit.plugin.java.JavaPlugin;
+
+import de.diego.tutorial.commands.FoodCommand;
+import de.diego.tutorial.commands.HealCommand;
+import de.diego.tutorial.commands.HealthCommand;
+import de.diego.tutorial.commands.Help;
+
+public class Main extends JavaPlugin {
+	
+	public void onEnable() {
+		System.out.println("§f§l[Heal] §9§lPlugin wurde erfolgreich aktiviert!");
+		getCommand("heal").setExecutor(new HealCommand());
+		getCommand("food").setExecutor(new FoodCommand());
+		getCommand("health").setExecutor(new HealthCommand());
+		getCommand("healhelp").setExecutor(new Help());
+		getCommand("hh").setExecutor(new Help());
+	}
+	
+	
+
+}
+
